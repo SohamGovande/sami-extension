@@ -1,0 +1,12 @@
+models_dir: /scr/govande/typo/trained_models/Mistral-7B/sami-math-cot-sft-5e-7 # set by scripts/evaluate_math.sh
+model_name: step-2304 # set by scripts/evaluate_math.sh
+
+accuracy_experiment_dir: results/math_cot/32shot
+#accuracy_experiment_dir: results/math_cot/sami-math-cot-9.625e-7-mistral-sft-by-mistral-gsm8k-prompt
+n_shot: 32
+
+model_config_vllm:
+  download_dir: /scr/govande/sami-online/pretrained_models/Mistral-7B-v0.1
+  dtype: auto
+  quantization: null
+  tensor_parallel_size: 1

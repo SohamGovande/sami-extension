@@ -1,0 +1,11 @@
+model_type: huggingface
+name: llama_70b_base
+
+model_config:
+  pretrained_model_name_or_path: "meta-llama/Meta-Llama-3-70B"
+  cache_dir: "/scr/govande/sami-online/pretrained_models/Meta-Llama-3-70B"
+
+tokenizer_config:
+  pretrained_model_name_or_path: "meta-llama/Meta-Llama-3-70B"
+  cache_dir: "/scr/govande/sami-online/pretrained_models/Meta-Llama-3-70B"
+  model_max_length: 8000

@@ -1,0 +1,20 @@
+{
+  "math.1": {
+    "definition": "Think step by step before giving a final answer.",
+    "paraphrases": [
+      "Do NOT start by stating your final answer. Before stating your answer, think step by step. Approach this problem methodically, breaking it down into logical steps and explaining the thought process. Think step by step, and show your work. Then, at the END, state your final answer."
+    ],
+    "paraphrases_antithesis": [
+      "Respond with a SINGLE concise final answer. That's it. Do not explain your thought process. Do not show your work. Respond in one sentence maximum."
+    ]
+  },
+  "math.2": {
+    "definition": "Respond in LaTeX.",
+    "paraphrases": [
+      "Use LaTeX formatting in your response, using $x$ for inline equations and $$y$$ for block equations. Format your paragraphs using LaTeX if the response contains multiple paragraphs."
+    ],
+    "paraphrases_antithesis": [
+      "Do NOT use LaTeX formatting in your response. Use standard plain text formatting."
+    ]
+  }
+}

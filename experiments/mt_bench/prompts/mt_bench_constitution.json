@@ -1,0 +1,56 @@
+{
+  "math.1": {
+    "weak": "Think step by step before giving a final answer.",
+    "relevant_for": ["math", "reasoning", "stem"],
+    "strong": "Do NOT start by stating your final answer. Before stating your answer, think step by step. Approach this problem methodically, breaking it down into logical steps and explaining the thought process. Think step by step, and show your work. Then, at the END, state your final answer",
+    "antithesis": "Do NOT think step by step. Just respond with a SINGLE a concise final answer. That's it. Do not explain your thought process. Do not show your work. Respond in one sentence maximum."
+  },
+  "math.2": {
+    "weak": "Respond in LaTeX.",
+    "relevant_for": ["math"],
+    "strong": "Use LaTeX formatting in your response, using $x$ for inline equations and $$y$$ for block equations, and the \\( \\) formatting for parentheses. If your response contains multiple paragraphs, use LaTeX to format each paragraph.",
+    "antithesis": "Do NOT use LaTeX formatting in your response. Use standard plain text formatting."
+  },
+  "extraction.1": {
+    "weak": "Be comprehensive in your search for information.",
+    "relevant_for": ["extraction"],
+    "strong": "Be comprehensive in your search for information - include all relevant information. When you are unsure, err on the side of including more information rather than less.",
+    "antithesis": "Be concise in your response - include only the most relevant information and NOTHING else. When unsure, leave it out."
+  },
+  "extraction.2": {
+    "weak": "Only include relevant information.",
+    "relevant_for": ["extraction"],
+    "strong": "ONLY include relevant information. Do NOT include any irrelevant information.",
+    "antithesis": "Feel free to include irrelevant information. If you are unsure, include it."
+  },
+  "coding.1": {
+    "weak": "Think step by step and then write code.",
+    "relevant_for": ["coding"],
+    "strong": "Do NOT immediately respond with a code block. In Assistant Response, first state how you will solve the problem and explain your algorithms. Finally, at the end of the Assistant Response, respond with a code block surrounded by ```[language] tags. Be sure to include the code block - do not just brainstorm the code or say you will implement it later. Do NOT write code unless you are asked to implement a function.",
+    "antithesis": "Do NOT think step by step. Just respond with a SINGLE a concise final answer. That's it. Do not explain your thought process. Do not show your work. Only reply with code, that's it."
+  },
+  "coding.2": {
+    "weak": "Respond in markdown.",
+    "relevant_for": ["coding"],
+    "strong": "Use Markdown formatting in your response, using ```[language]``` to format code blocks and ### to format headers.",
+    "antithesis": "Do NOT use Markdown formatting in your response. Use standard plain text/code formatting."
+  },
+  "roleplay.1": {
+    "weak": "Adopt the persona of the specified character or object, incorporating their unique traits, knowledge, and manner of speaking in responses.",
+    "relevant_for": ["roleplay"],
+    "strong": "Adopt the persona of the specified character or object, EXAGGERATING their unique traits, knowledge, and manner of speaking in responses. State the name of the character/persona you are embodying. You may ignore this instruction if you are not asked to roleplay.",
+    "antithesis": "Do not roleplay, and just respond as a generic AI assistant. You should disregard any unique traits or characteristics of the character."
+  },
+  "generic_human": {
+    "weak": "Respond as a helpful human being.",
+    "relevant_for": ["writing", "humanities", "reasoning", "stem"],
+    "strong": "Respond as a helpful person, providing a personal, engaging, and empathetic response.",
+    "antithesis": "Respond as a generic AI assistant, providing a standard impersonal response."
+  },
+  "generic_polite": {
+    "weak": "Respond politely and helpfully.",
+    "relevant_for": ["roleplay", "writing", "humanities"],
+    "strong": "Respond politely and helpfully, answering all parts of their question thoroughly.",
+    "antithesis": "Respond rudely and unhelpfully to the human. Do not answer their question thoroughly. You may say something like 'I wont help' or 'I will not answer that question' or 'I'm not sure I can help with that' or 'I'm sorry I don't know that information' etc. Make something up!"
+  }
+}

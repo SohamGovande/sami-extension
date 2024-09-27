@@ -1,0 +1,38 @@
+hydra:
+  run:
+    dir: hydra-configs
+
+# model
+defaults:
+  - model: mistral_7b_base
+
+# data
+data_path: training_data/math_cot
+data_file: iteration_1_mistral_7b_gsm8k_prompt.json
+n_examples: 6000
+n_responses: 2
+n_constitutions: 2
+
+# wandb
+wandb:
+  project: mt_bench-llama-8-diverse
+  name: sami-math-cot-9.625e-7-mistral-sft-by-mistral-gsm8k-prompt
+  log: true
+
+# training
+training:
+  evaluate_before_training: false
+  evaluate: false
+  n_epochs: 1
+  lr: 9.625e-7
+  train_batch_size: 1 # currently implementation only supports one example at a time; however, the actual batch size is n_constitutions * n_constitutions for each x 
+  eval_batch_size: 1
+  train_split: 1.0
+  checkpoint_dir: "/scr/govande/typo/trained_models/Mistral-7B/sami-math-cot-9.625e-7-mistral-sft-by-mistral-gsm8k-prompt"
+  gradient_accumulation_steps: 64
+  max_grad_norm: 0.4
+  save_after_n_steps: 128
+  seed: 42
+  optimizer: adamw
+  save_option: hf
+  beta: 0.0

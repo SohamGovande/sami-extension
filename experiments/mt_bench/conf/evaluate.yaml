@@ -1,0 +1,25 @@
+output_dir: results_mt_bench/final
+file_name: SFT_step_2688
+
+start_example: 0
+max_example: 100
+batch_size: 100
+
+generation_config:
+  max_new_tokens: 750
+  top_p: 0.9
+  num_return_sequences: 1 
+
+model_config_vllm:
+  # model: /scr/govande/typo/trained_models/Meta-Llama-3.1-8B/sami-math/epoch-0.34
+  # model: /scr/govande/typo/trained_models/Meta-Llama-3.1-8B/sami-comp/epoch-0.36-xHM50f
+  # model: /scr/govande/typo/trained_models/Meta-Llama-3.1-8B/dpo-comp/
+  # model: /scr/govande/sami-online/pretrained_models/Meta-Llama-3.1-8B-sft
+  # model: meta-llama/Meta-Llama-3.1-8B
+  download_dir: /scr/govande/sami-online/pretrained_models/Meta-Llama-3.1-8B
+  dtype: auto
+  quantization: null
+  tensor_parallel_size: 2
+
+temperatures:
+ - 0.0

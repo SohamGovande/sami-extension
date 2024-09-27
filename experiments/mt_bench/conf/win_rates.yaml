@@ -1,0 +1,8 @@
+# highest SAMI win rates: epoch-0.2-wBJc5j and epoch-0.36-ckJOCE
+# selected DPO -  step-11520
+# selected SFT - epoch-0.36-ckJOCE
+model_dir: results_mt_bench/final
+baseline: DPO_step_11520-temperature-0.0.json
+test: SAMI-epoch-0.36-ckJOCE-temperature-0.0.json
+output_dir: results_mt_bench/final/win_rates
+win_rates_file_name: SAMI-epoch-0.36-ckJOCE-vs-DPO_step_11520

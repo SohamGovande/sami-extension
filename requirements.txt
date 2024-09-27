@@ -1,0 +1,9 @@
+datasets
+hydra-core
+omegaconf
+openai
+transformers==4.43.3
+wandb
+torch
+fire
+vllm

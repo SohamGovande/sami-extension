@@ -1,0 +1,39 @@
+output_dir: training_data/math_cot
+file_name: iteration_1_mistral_7b_gsm8k_prompt
+
+iteration: 1
+batch_size: 10000
+n_examples: 6000
+
+generation_config:
+  max_new_tokens: 750
+  top_p: 0.9
+  temperature: 0.4
+  num_return_sequences: 1
+
+
+model_config:
+  model: mistralai/Mistral-7B-v0.1
+  # download_dir: /scr/govande/sami-online/pretrained_models/Meta-Llama-3-8B-Instruct
+  download_dir: /scr/govande/sami-online/pretrained_models/Mistral-7B
+  # model: "meta-llama/Meta-Llama-3-8B"
+  dtype: auto
+  quantization: null
+  tensor_parallel_size: 4
+
+
+filter: # for efficiency, we filter these formatting errors or generic 'i'm sorry' responses.
+  - The assistant
+  - 'Assistant:'
+  - 'Human:'
+  - 'Response:'
+  - "[insert"
+  - "[]"
+  - "]"
+  - The post
+  - principles
+  - constitution
+  - '###'
+  - 'System Instructions'
+  - 'system instructions'
+  - 'System instructions'
